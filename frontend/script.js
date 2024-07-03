@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const data = await response.json();
-        console.log('Received data:', data); // Check the data received in console
+        console.log('Received data:', data); 
 
         const tbody = document.querySelector('#crypto-table tbody');
 

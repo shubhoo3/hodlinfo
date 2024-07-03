@@ -3,7 +3,9 @@ const Crypto = require('../models/crypto');
 
 exports.fetchAndStoreCryptoData = async (req, res) => {
     try {
-        const response = await axios.get('https://api.wazirx.com/api/v2/tickers');
+        const api = 'https://api.wazirx.com/api/v2/tickers';
+        console.log(api)
+        const response = await axios.get(api);
         const tickers = response.data;
         console.log(tickers)
 
